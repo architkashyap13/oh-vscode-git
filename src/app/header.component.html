@@ -15,8 +15,8 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><a href="#">Employee</a></li>
-          <li><a href="#">IRM</a></li>
-          <li><a href="#">HR</a></li>
+          <li *ngIf="user.roles.indexOf('ROLE_IRM') > -1"><a href="#">IRM</a></li>
+          <li *ngIf="user.roles.indexOf('ROLE_HR') > -1"><a href="#">HR</a></li>
         </ul>        
         <ul class="nav navbar-nav navbar-right">  
             <li><a href="#">Log-in</a></li>        

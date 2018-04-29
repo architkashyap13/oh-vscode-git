@@ -5,16 +5,17 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
-
+import { CoreModule } from './core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
